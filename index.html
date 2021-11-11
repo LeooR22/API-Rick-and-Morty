@@ -19,6 +19,7 @@
   <body>
     <div class="container my-5">
       <!-- Spinner cargando -->
+
       <section class="d-flex aling-items-center d-none" id="loading">
         <strong>Cargando...</strong>
         <div
@@ -27,6 +28,15 @@
           aria-hidden="true"
         ></div>
       </section>
+
+      <div id="paginacion"></div>
+
+      <template id="template-paginacion">
+        <section class="my-3 d-flex justify-content-between">
+          <button class="btn btn-outline-secondary">Preview</button>
+          <button class="btn btn-outline-primary">Next</button>
+        </section>
+      </template>
 
       <section class="row" id="cards-dinamicas"></section>
     </div>
